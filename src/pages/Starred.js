@@ -1,7 +1,8 @@
 import React from 'react';
+import MainPageLayout from '../components/MainPageLayout';
 
 const Starred = () => {
-  return <div>This Is Starred</div>;
+  return <MainPageLayout>This Is Starred</MainPageLayout>;
 };
 
 export default Starred;
