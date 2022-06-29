@@ -11,6 +11,7 @@ const reducer = (prevState, action) => {
     case 'FETCH_FAILED': {
       return { ...prevState, isLoading: false, error: action.error };
     }
+
     default:
       return prevState;
   }
@@ -53,12 +54,13 @@ const Show = () => {
   console.log('show', show);
 
   if (isLoading) {
-    return <div>Data Is Being Loaded</div>;
+    return <div>Data is being loaded</div>;
   }
 
   if (error) {
-    return <div>Error Occured:{error}</div>;
+    return <div>Error occured: {error}</div>;
   }
+
   return <div>this is show page</div>;
 };
 
